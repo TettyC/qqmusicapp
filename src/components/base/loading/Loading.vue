@@ -11,7 +11,7 @@ export default {
   name: 'Loading',
   data() {
     return {
-      title: ''
+      title: '正在载入：）..'
     }
   },
   methods: {
