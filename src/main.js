@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import loadingDirective from '@/components/base/loading/directive'
+import noResultDirective from '@/components/base/noResult/directive'
 // 图片懒加载插件
 import lazyPlugin from 'vue3-lazy'
 
@@ -14,4 +15,5 @@ createApp(App)
   .use(router)
   .use(lazyPlugin, { loading: require('@/assets/images/default.png') })
   .directive('loading', loadingDirective)
+  .directive('no-result', noResultDirective)
   .mount('#app')
